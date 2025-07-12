@@ -54,3 +54,11 @@ links.forEach(link => {
     }
   });
 }); 
+
+// Expande/oculta a descrição da automação ao clicar no botão
+function toggleDescricao(button) {
+  const descricao = button.nextElementSibling;
+  const isVisible = descricao.style.display === "block";
+  descricao.style.display = isVisible ? "none" : "block";
+  button.textContent = isVisible ? "Ver detalhes" : "Ocultar detalhes";
+}

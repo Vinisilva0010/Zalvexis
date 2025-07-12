@@ -166,36 +166,87 @@
 
     <!-- Case Studies Section -->
     <section id="cases" class="cases-section">
-        <div class="container">
-            <h2 data-aos="fade-up">Resultados Reais</h2>
-            <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="case-card">
-                            <h3>Aumento de Receita em 32%</h3>
-                            <p>Implementamos um modelo preditivo de vendas que gerou um crescimento de 32% na receita anual de um cliente do setor varejista.</p>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <div class="case-card">
-                            <h3>Redução de Custos com IA</h3>
-                            <p>Soluções de automação inteligente reduziram custos operacionais em 25% para uma empresa de logística.</p>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <div class="case-card">
-                            <h3>Melhoria de Performance Operacional</h3>
-                            <p>Otimizamos processos de ETL, diminuindo o tempo de processamento de dados em 60% para um banco de investimentos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+  <div class="container">
+    <h2 data-aos="fade-up">Automação em Ação</h2>
+    <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+        <!-- Card 1 -->
+        <div class="swiper-slide">
+          <div class="case-card video-card">
+            <video controls>
+              <source src="videos/automacao1.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo.
+            </video>
+            <button class="btn-detalhes" onclick="toggleDescricao(this)">Ver detalhes</button>
+            <div class="descricao-completa">
+              <p>Você já imaginou ter previsões automáticas de estoque futuro a partir de planilhas simples de entrada e saída?
+Esse foi exatamente o problema que resolvi com essa automação! 💡</p>
+<p>🔍 O que ela faz:</p>
+ <p>✅ Lê planilhas de entrada e saída de produtos</p>
+ ✅ Gera previsões para os próximos meses com modelos de IA (Prophet, ARIMA etc.)
+ ✅ Mostra gráficos interativos de tendência por produto
+ ✅ Alerta produtos que podem acabar em breve
+ ✅ Exibe tabela de previsões organizadas
+ ✅ Inclui métricas como RMSE, R² e MAPE para entender a confiabilidade do modelo
+🧠 Tudo isso feito com machine learning, focado em facilitar a tomada de decisões logísticas para empresas de todos os portes.
+👨‍💻 Desenvolvido com:
+ React + Tailwind no frontend
+ FastAPI + Pandas + Prophet no backend
+ Exportação de gráficos com Kaleido
+ Pronto para evoluir como produto SaaS!
             </div>
+          </div>
         </div>
-    </section>
+
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+          <div class="case-card video-card">
+            <video controls>
+              <source src="videos/automacao2.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo.
+            </video>
+            <button class="btn-detalhes" onclick="toggleDescricao(this)">Ver detalhes</button>
+            <div class="descricao-completa">
+              <p>Imagine subir um Excel com dados de vendas, estoque ou qualquer outra métrica e, em segundos, receber uma análise detalhada com:</p>
+
+ <p>✅ Gráficos interativos de previsão 
+✅ Tendência explicada em linguagem simples 
+✅ Métricas de desempenho do modelo 
+✅ Tabela com os valores previstos (mínimo, esperado e máximo) 
+✅ Análise automática em português claro e direto
+</p>
+💡 Usei Machine Learning com o modelo Prophet, frontend em React e backend com FastAPI — tudo pensando em facilitar decisões estratégicas baseadas em dados.
+
+🛠️ Essa solução é parte do meu projeto de transformar planilhas em inteligência de verdade, acessível para qualquer pessoa.
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="swiper-slide">
+          <div class="case-card video-card">
+            <video controls>
+              <source src="videos/automacao3.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo.
+            </video>
+            <button class="btn-detalhes" onclick="toggleDescricao(this)">Ver detalhes</button>
+            <div class="descricao-completa">
+              <p>Criamos um chatbot inteligente personalizado que responde automaticamente a todas as perguntas sobre a empresa — desde informações institucionais, serviços, horário de atendimento, até detalhes específicos solicitados por clientes.</p>
+
+<p> A automação está disponível 24 horas por dia e foi treinada com dados reais da empresa, proporcionando respostas rápidas, precisas e com linguagem natural.
+</p>
+Ideal para melhorar o atendimento ao cliente, reduzir a sobrecarga da equipe e garantir uma experiência moderna e eficiente.
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Technologies Section -->
     <section id="tecnologias" class="technologies-section container">
