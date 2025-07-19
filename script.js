@@ -37,6 +37,25 @@ const swiper = new Swiper('.mySwiper', {
   pagination: { el: '.swiper-pagination', clickable: true },
 });
 
+// Inicializa Swiper para os cards de serviços no mobile
+const serviceSwiper = new Swiper('.mobile-slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 'auto',
+      loop: false,
+      autoplay: false,
+    }
+  }
+});
+
+
 // Inicializa AOS (Animate on Scroll)
 AOS.init({
   duration: 800,

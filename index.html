@@ -21,6 +21,9 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
     <!-- Hero Section -->
@@ -47,49 +50,101 @@
     </section>
 
     <!-- Services Section -->
-    <section id="servicos" class="services-section">
-        <div class="container">
-            <h2 data-aos="fade-up">O que Fazemos</h2>
-            <div class="services-cards">
-              
-                <!-- Card 2 -->
-                <div class="service-card" data-aos="flip-left" data-aos-delay="100">
-                    <div class="card-img">
-                        <img src="image/image22.png" alt="Performance de Equipes e Vendas">
-                    </div>
-                    <i class="fas fa-users"></i>
-                    <h3>Análise de Performance de Equipes e Vendas</h3>
-                    <p>Entenda o desempenho dos setores e encontre oportunidades de crescimento.</p>
-                </div>
-              v>
-            </div>
-            <a href="servicos.html" class="btn-primary btn-centered" data-aos="fade-up" data-aos-delay="300">Ver todos os serviços de Análise de Dados</a>
-        </div>
-    </section>
+<!-- Services Section -->
+<section id="servicos" class="services-section">
+  <div class="container">
+    <h2 data-aos="fade-up">O que Fazemos</h2>
 
-    <!-- Automations Section -->
-    <section id="automacoes" class="services-section">
-        <div class="container">
-            <h2 data-aos="fade-up">Automatize Processos e Ganhe Tempo com Soluções Inteligentes</h2>
-            <p data-aos="fade-up" data-aos-delay="50" style="max-width:800px;margin:0 auto 2rem;text-align:center;">
+    <!-- Cards como Swiper apenas no mobile -->
+    <div class="services-cards swiper-container mobile-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide service-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card-img">
+            <img src="image/image110.png" alt="Performance de Equipes e Vendas">
+          </div>
+          <i class="fas fa-users"></i>
+          <h3>BI Corporativo Personalizado</h3>
+        <p>Dashboards focados no que importa para o seu negócio.</p>
+        </div>
+
+         <div class="swiper-slide service-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card-img">
+            <img src="image/image22.png" alt="Performance de Equipes e Vendas">
+          </div>
+          <i class="fas fa-users"></i>
+          <h3>Análise de Performance de Equipes e Vendas</h3>
+          <p>Entenda o desempenho dos setores e encontre oportunidades de crescimento.</p>
+        </div>
+
+        <!-- Outro Card -->
+        <div class="swiper-slide service-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card-img">
+            <img src="image/image111.png" alt="Performance de Equipes e Vendas">
+          </div>
+          <i class="fas fa-users"></i>
+          <h3>Análise de ROI por Canal de Venda</h3>
+        <p>Conheça o retorno real de cada investimento.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão fora do swiper -->
+    <a href="servicos.html" class="btn-primary btn-centered" data-aos="fade-up" data-aos-delay="300">
+      Ver todos os serviços de Análise de Dados
+    </a>
+  </div>
+</section>
+
+
+
+<section id="servicos" class="services-section">
+  <div class="container">
+    <h2 data-aos="fade-up">Automatize Processos e Ganhe Tempo com Soluções Inteligentes</h2>
+    <p data-aos="fade-up" data-aos-delay="50" style="max-width:800px;margin:0 auto 2rem;text-align:center;">
                 Automatize tarefas repetitivas e otimize processos com nossas soluções em automação usando Excel, Python, Machine Learning e Inteligência Artificial. Reduza erros, aumente a produtividade e libere sua equipe para focar no que realmente importa.
             </p>
-            <div class="services-cards">
-               
-                
-                <!-- Automation Card 3 -->
-                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
-                    <div class="card-img">
-                        <img src="image/image6.png" alt="Automação IA">
-                    </div>
-                    <i class="fas fa-robot"></i>
-                    <h3>Automação com IA para Atendimento ou Classificação</h3>
+    <!-- Cards como Swiper apenas no mobile -->
+    <div class="services-cards swiper-container mobile-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide service-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card-img">
+            <img src="image/image6.png" alt="Performance de Equipes e Vendas">
+          </div>
+          <i class="fas fa-users"></i>
+          <h3>Automação com IA para Atendimento ou Classificação</h3>
                     <p>IA para responder clientes, organizar dados e tomar decisões simples.</p>
-                </div>
-            </div>
-            <a href="automacao.html" class="btn-primary btn-centered" data-aos="fade-up" data-aos-delay="300">Ver todas as soluções de automação</a>
-            </div>
-    </section>
+        </div>
+
+         <div class="swiper-slide service-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Performance de Equipes e Vendas">
+          </div>
+          <i class="fas fa-users"></i>
+          <h3>Script Python para coleta e organização de dados</h3><p>Dados limpos e estruturados automaticamente.</p>
+        </div>
+
+        <!-- Outro Card -->
+        <div class="swiper-slide service-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Performance de Equipes e Vendas">
+          </div>
+          <i class="fas fa-users"></i>
+          <h3>Envio automático de relatórios por e-mail</h3><p>Distribuição programada para toda a equipe.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão fora do swiper -->
+    <a href="automacao.html" class="btn-primary btn-centered" data-aos="fade-up" data-aos-delay="300">
+     Mais Automações
+    </a>
+  </div>
+</section>
+
+
+
+
+   
             <!-- ===== Teaser Automação para o Mercado Financeiro ===== -->
             <section id="automacoes" class="services-section">
             <div class="container">
@@ -100,20 +155,34 @@
                Confira abaixo alguns exemplos prontos para integrar ao seu fluxo financeiro. 
             </p>
 
-            <div class="services-cards">
-                <!-- Finance Automation Card 1 -->
-                
+           <div class="services-cards swiper-container mobile-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide service-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card-img">
+            <img src="image/image101.png" alt="Performance de Equipes e Vendas">
+          </div>
+          <i class="fas fa-users"></i>
+          <h3>Alerta de Oportunidades em Criptomoedas</h3><p>Detecte sinais de entrada automaticamente com base em indicadores técnicos.</p>
+        </div>
 
-               
+         <div class="swiper-slide service-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/4386367/pexels-photo-4386367.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Performance de Equipes e Vendas">
+          </div>
+          <i class="fas fa-users"></i>
+         <h3>Planejamento Financeiro Automatizado</h3><p>Metas, controle de gastos e aportes mensais automatizados.</p>
+        </div>
 
-                <!-- Finance Automation Card 3 -->
-                <div class="service-card" data-aos="flip-left" data-aos-delay="550">
-                    <div class="card-img"><img src="image/image9.png" alt="Planejamento Financeiro"></div>
-                    <i class="fas fa-piggy-bank"></i>
-                    <h3>Planejamento Financeiro Automatizado</h3>
-                    <p>Metas, controle de gastos e aportes mensais automatizados.</p>
-                </div>
-            </div>
+        <!-- Outro Card -->
+        <div class="swiper-slide service-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/4386368/pexels-photo-4386368.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Performance de Equipes e Vendas">
+          </div>
+          <i class="fas fa-users"></i>
+          <h3>Dashboard de Renda Fixa Automatizado</h3><p>Acompanhe rentabilidade, vencimentos e taxas em tempo real.</p>
+        </div>
+      </div>
+    </div>
 
             <a href="financeiro.html" class="btn-primary btn-centered" data-aos="fade-up" data-aos-delay="650"> Ver mais soluções de <br>
                  automações do mercado financeiro</a>
@@ -252,8 +321,6 @@ Esse foi exatamente o problema que resolvi com essa automação! 💡</p>
             </div>
         </div>
         </section>
-              
-        
 
             </div>
             <div class="swiper-pagination"></div>
@@ -334,5 +401,8 @@ Esse foi exatamente o problema que resolvi com essa automação! 💡</p>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 </html> 
